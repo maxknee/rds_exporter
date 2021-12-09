@@ -1,6 +1,7 @@
 FROM alpine:latest
 
-COPY ./rds_exporter/rds_exporter  /bin/
+COPY ./rds_exporter/  /bin/
+RUN ls -al /bin/rds_exporter
 # COPY config.yml           /etc/rds_exporter/config.yml
 
 RUN apk update && \
